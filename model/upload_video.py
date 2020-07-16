@@ -207,7 +207,7 @@ def main(_file, _title, _description, _category, _keywords):
     parser.add_argument("--keywords", help="Video keywords, comma separated",
                            default="")
     parser.add_argument("--privacyStatus", choices=VALID_PRIVACY_STATUSES,
-                           default=VALID_PRIVACY_STATUSES[1], help="Video privacy status.")
+                           default=VALID_PRIVACY_STATUSES[2], help="Video privacy status.")
     # args = argparser.parse_args()
     args = parser.parse_args(["--file", _file, "--title", _title, "--description", _description, "--category", _category, "--keywords", _keywords])
 
