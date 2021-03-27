@@ -60,24 +60,26 @@ class upload(QThread):
         # print("房间号：", data[2], "主播名字：", data[4], "是否上传：", data[8])
         playname = self.data[4]
         data_room = self.data[2]
-        title = "Explosive dance"
+        title = "Music dance"
         description = '▷Live streaming platforms are bursting with dance videos.\n' \
                       '▷各大直播平台劲爆热舞视频。\n' \
                       '▷The video has been reedited！FHD！\n' \
                       '▷视频经过二次编辑，全高清！\n' \
-                      '▷If you like my channel, check it out on thumb up.\n' \
-                      '▷喜欢我的频道请关注并点赞。\n\n' \
+                      '▷You can also leave a like and share my videos if you want !\n' \
+                      '▷如果你愿意，也可以点赞，分享我的视频!\n' \
+                      '▷Please subscribe for more videos\n' \
+                      '▷请订阅我们的频道观看更多视频\n\n' \
                       'Chinese Name：#%s\n' \
                       'Huya TV  ID：%s\n' \
                       '***No Instagram Facebook Twitter*** \n\n' \
                       '➤Donate to my Channel\n' \
-                      'https://streamlabs.com/tomhanks3\n' \
+                      'https://streamlabs.com/musicdance1\n' \
                       '➤Thanks :) \n\n' \
                       '▷DO not re-upload(must post original link)\n' \
                       '▷请勿直接搬运，转载注明出处！' \
                       % (playname, data_room)
         category = "10"
-        keywords = 'Explosive dance,Hd beauty'
+        keywords = 'Explosive dance,Hd beauty,性感舞蹈,紧身皮裤,皮裤,性感美女,直播舞蹈,丝袜，诱惑'
         t = '--file %s --title %s --description %s --category %d --keywords %s' % (self.file_name, title, description, 10, keywords)
         print(t)
         setProxy()

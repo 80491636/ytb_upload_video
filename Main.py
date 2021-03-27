@@ -37,7 +37,7 @@ class mywindow(QMainWindow, Ui_MainWindow):
         file_name,n = self.listwidClick()
         self.upload = upload(file_name,self.datas[n])
         self.upload.start()
-        self.label_info.setText("上传文件结束")
+        self.label_info.setText("正在上传文件...")
 
     def autoupClick(self):
         '''
